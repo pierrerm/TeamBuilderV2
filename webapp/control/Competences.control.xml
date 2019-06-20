@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<Panel headerText="Team Competences" expandable="true" expanded="true" id="teamCompetences">
+		<FlexBox justifyContent="SpaceBetween">
+			<l:HorizontalLayout allowWrapping="true">
+				<!--<l:VerticalLayout class="sapUiSmallMarginEnd">-->
+					<ProgressIndicator
+						class="sapUiSmallMarginBottom"
+						percentValue="30"
+						displayValue="30%"
+						showValue="true"
+						state="None" />
+					<ProgressIndicator
+						lass="sapUiSmallMarginBottom"
+						percentValue="50"
+						showValue="false"
+						state="Error" />
+				<!--</l:VerticalLayout> -->
+				<!--<l:VerticalLayout>-->
+					<ProgressIndicator
+						class="sapUiSmallMarginBottom"
+						percentValue="99"
+						displayValue="0.99GB of 1GB"
+						showValue="true"
+						state="Success" />
+					<ProgressIndicator
+						class="sapUiSmallMarginBottom"
+						percentValue="25"
+						displayValue="25%"
+						showValue="true"
+						state="Warning" />
+				<!--</l:VerticalLayout> -->
+			</l:HorizontalLayout>
+			<!--<Button id="confirm" text="{i18n>ConfirmPreparations}" type="Emphasized" class="sapUiSmallMarginBegin sapUiTinyMarginTop" press=".onConfirm"-->
+			<!--	enabled="{= ${$this>/switchStateItems} &amp;&amp; ${$this>/switchStateInvoice} &amp;&amp; ${$this>/switchStateSample}}"/>-->
+		</FlexBox>
+	</Panel>
+</core:FragmentDefinition>

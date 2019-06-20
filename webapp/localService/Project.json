@@ -1,0 +1,156 @@
+[{
+	"ProjectID": "2000000001",
+	"ContractorID": "4000000001",
+	"Category": "DB",
+	"Name": "Server Installation",
+	"Language": "EN",
+	"Description": "Following the acquistion of TechSavy Consulting and diversification of services, Teknikal Services is looking to set up in-house servers to host their ERP and Db services.",
+	"DateStarted": "/Date(1556251200000)/",
+	"DateEnd": "/Date(1564545600000)/",
+	"CreatedAt": "/Date(1554091200000)/",
+	"ChangedAt": "/Date(1557633600000)/",
+	"__metadata": {
+		"uri": "Project('ProjectID%201')",
+		"type": "talent.Project"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "Project('ProjectID%201')/ToProjectAssignments"
+		}
+	},
+	"ToClient": {
+		"__deferred": {
+			"uri": "Project('ProjectID%201')/ToClient"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "Project('ProjectID%201')/ToCompetences"
+		}
+	},
+	"Status": "ongoing"
+}, {
+	"ProjectID": "2000000002",
+	"ContractorID": "4000000002",
+	"Category": "BI",
+	"Name": "SAP BO Configuration",
+	"Language": "FR",
+	"Description": "UdeM is looking to enhance their business insights and analytical power to make the most of their data in upcoming budgeting and marketing decisions.",
+	"DateStarted": "/Date(1553227200000)/",
+	"DateEnd": "/Date(1570680000000)/",
+	"CreatedAt": "/Date(1551416400000)/",
+	"ChangedAt": "/Date(1557633600000)/",
+	"__metadata": {
+		"uri": "Project('ProjectID%202')",
+		"type": "talent.Project"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "Project('ProjectID%202')/ToProjectAssignments"
+		}
+	},
+	"ToClient": {
+		"__deferred": {
+			"uri": "Project('ProjectID%202')/ToClient"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "Project('ProjectID%202')/ToCompetences"
+		}
+	},
+	"Status": "ongoing"
+}, {
+	"ProjectID": "2000000003",
+	"ContractorID": "4000000003",
+	"Category": "Cloud",
+	"Name": "AWS Cloud Migration",
+	"Language": "FR",
+	"Description": "Provigo has decided to migrate from in-house servers to AWS cloud services, a strategic move motivated by a lack of unification and high installation costs for new servers.",
+	"DateStarted": "/Date(1560398400000)/",
+	"DateEnd": "/Date(1575003600000)/",
+	"CreatedAt": "/Date(1556683200000)/",
+	"ChangedAt": "/Date(1557633600000)/",
+	"__metadata": {
+		"uri": "Project('ProjectID%203')",
+		"type": "talent.Project"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "Project('ProjectID%203')/ToProjectAssignments"
+		}
+	},
+	"ToClient": {
+		"__deferred": {
+			"uri": "Project('ProjectID%203')/ToClient"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "Project('ProjectID%203')/ToCompetences"
+		}
+	},
+	"Status": "new"
+}, {
+	"ProjectID": "2000000004",
+	"ContractorID": "4000000004",
+	"Category": "CRM",
+	"Name": "C/4Hana Installation",
+	"Language": "EN",
+	"Description": "St-Hubert is looking to enhance their costumer experience for online delivery and e-commerce, opting for the newly-released C/4Hana CRM.",
+	"DateStarted": "/Date(1550811600000)/",
+	"DateEnd": "/Date(1559188800000)/",
+	"CreatedAt": "/Date(1548997200000)/",
+	"ChangedAt": "/Date(1557633600000)/",
+	"__metadata": {
+		"uri": "Project('ProjectID%204')",
+		"type": "talent.Project"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "Project('ProjectID%204')/ToProjectAssignments"
+		}
+	},
+	"ToClient": {
+		"__deferred": {
+			"uri": "Project('ProjectID%204')/ToClient"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "Project('ProjectID%204')/ToCompetences"
+		}
+	},
+	"Status": "finished"
+}, {
+	"ProjectID": "2000000005",
+	"ContractorID": "4000000005",
+	"Category": "ERP",
+	"Name": "S/4Hana Configuration",
+	"Language": "FR",
+	"Description": "ProVert, Quebec's leader in the gardening and hardware retail industry, is looking to launch SAP's latest ERP, following the recent installation of Hana databases.",
+	"DateStarted": "/Date(1548651600000)/",
+	"DateEnd": "/Date(1555473600000)/",
+	"CreatedAt": "/Date(1546318800000)/",
+	"ChangedAt": "/Date(1557633600000)/",
+	"__metadata": {
+		"uri": "Project('ProjectID%205')",
+		"type": "talent.Project"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "Project('ProjectID%205')/ToProjectAssignments"
+		}
+	},
+	"ToClient": {
+		"__deferred": {
+			"uri": "Project('ProjectID%205')/ToClient"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "Project('ProjectID%205')/ToCompetences"
+		}
+	},
+	"Status": "canceled"
+}]

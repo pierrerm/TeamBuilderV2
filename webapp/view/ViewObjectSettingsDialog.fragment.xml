@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog id="viewObjectSettingsDialog" confirm=".onConfirmViewObjectSettingsDialog">
+		<sortItems>
+			<ViewSettingsItem text="Language" key="ToEmployee/Language" selected="true"/>
+			<ViewSettingsItem text="First Name" key="ToEmployee/FirstName" selected="true"/>
+			<ViewSettingsItem text="Last Name" key="ToEmployee/LastName" selected="true"/>
+			<ViewSettingsItem text="Experience" key="ToEmployee/DateOfArrival" selected="true"/>
+			<ViewSettingsItem text="Position" key="ToEmployee/Position" selected="true"/>
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

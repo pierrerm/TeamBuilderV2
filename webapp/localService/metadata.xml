@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+	<edmx:DataServices m:DataServiceVersion="2.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+		<Schema Namespace="talent" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="Employee">
+				<Key>
+					<PropertyRef Name="EmployeeID"/>
+				</Key>
+				<Property Name="EmployeeID" Type="Edm.String" MaxLength="10" Nullable="false"/>
+				<Property Name="Address" Type="Edm.String" MaxLength="200"/>
+				<Property Name="Position" Type="Edm.String" MaxLength="100"/>
+				<Property Name="FirstName" Type="Edm.String" MaxLength="40" Nullable="false"/>
+				<Property Name="LastName" Type="Edm.String" MaxLength="40" Nullable="false"/>
+				<Property Name="Headshot" Type="Edm.String" MaxLength="100"/>
+				<Property Name="Sex" Type="Edm.String" MaxLength="1"/>
+				<Property Name="PhoneNumber" Type="Edm.String" MaxLength="30"/>
+				<Property Name="EmailAddress" Type="Edm.String" MaxLength="255"/>
+				<Property Name="Language" Type="Edm.String" MaxLength="2"/>
+				<Property Name="DateOfBirth" Type="Edm.DateTime" Precision="7"/>
+				<Property Name="DateOfArrival" Type="Edm.DateTime" Precision="7"/>
+				<Property Name="CreatedAt" Type="Edm.DateTime" Precision="7"/>
+				<Property Name="ChangedAt" Type="Edm.DateTime" Precision="7"/>
+				<NavigationProperty Name="ToProjectAssignments" Relationship="talent.Assoc_Employee_ProjectAssignments"
+					FromRole="FromRole_Assoc_Employee_ProjectAssignments" ToRole="ToRole_Assoc_Employee_ProjectAssignments"/>
+				<NavigationProperty Name="ToCompetences" Relationship="talent.Assoc_Employee_Competences" FromRole="FromRole_Assoc_Employee_Competences"
+					ToRole="ToRole_Assoc_Employee_Competences"/>
+			</EntityType>
+			<EntityType Name="Project">
+				<Key>
+					<PropertyRef Name="ProjectID"/>
+				</Key>
+				<Property Name="ProjectID" Type="Edm.String" MaxLength="10" Nullable="false"/>
+				<Property Name="ContractorID" Type="Edm.String" MaxLength="10" Nullable="false"/>
+				<Property Name="Category" Type="Edm.String" MaxLength="40" Nullable="false"/>
+				<Property Name="Name" Type="Edm.String" MaxLength="255" Nullable="false"/>
+				<Property Name="Canceled" Type="Edm.Boolean" DefaultValue="false" Nullable="false"/>
+				<Property Name="Description" Type="Edm.String" MaxLength="255"/>
+				<Property Name="DateStarted" Type="Edm.DateTime" Precision="7"/>
+				<Property Name="DateEnd" Type="Edm.DateTime" Precision="7"/>
+				<Property Name="CreatedAt" Type="Edm.DateTime" Precision="7"/>
+				<Property Name="ChangedAt" Type="Edm.DateTime" Precision="7"/>
+				<NavigationProperty Name="ToProjectAssignments" Relationship="talent.Assoc_Project_ProjectAssignments"
+					FromRole="FromRole_Assoc_Project_ProjectAssignments" ToRole="ToRole_Assoc_Project_ProjectAssignments"/>
+				<NavigationProperty Name="ToClient" Relationship="talent.Assoc_Client_Projects" FromRole="ToRole_Assoc_Client_Projects"
+					ToRole="FromRole_Assoc_Client_Projects"/>
+				<NavigationProperty Name="ToCompetences" Relationship="talent.Assoc_Project_Competences" FromRole="FromRole_Assoc_Project_Competences"
+					ToRole="ToRole_Assoc_Project_Competences"/>
+			</EntityType>
+			<EntityType Name="ProjectAssignment">
+				<Key>
+					<PropertyRef Name="ProjectAssignmentID"/>
+				</Key>
+				<Property Name="ProjectAssignmentID" Type="Edm.String" MaxLength="10" Nullable="false"/>
+				<Property Name="ProjectID" Type="Edm.String" MaxLength="10" Nullable="false"/>
+				<Property Name="EmployeeID" Type="Edm.String" MaxLength="10" Nullable="false"/>
+				<NavigationProperty Name="ToProject" Relationship="talent.Assoc_Project_ProjectAssignments"
+					FromRole="ToRole_Assoc_Project_ProjectAssignments" ToRole="FromRole_Assoc_Project_ProjectAssignments"/>
+				<NavigationProperty Name="ToEmployee" Relationship="talent.Assoc_Employee_ProjectAssignments"
+					FromRole="ToRole_Assoc_Employee_ProjectAssignments" ToRole="FromRole_Assoc_Employee_ProjectAssignments"/>
+			</EntityType>
+			<EntityType Name="Client">
+				<Key>
+					<PropertyRef Name="ClientID"/>
+				</Key>
+				<Property Name="ClientID" Type="Edm.String" MaxLength="10" Nullable="false"/>
+				<Property Name="Address" Type="Edm.String" MaxLength="200"/>
+				<Property Name="CompanyName" Type="Edm.String" MaxLength="80" Nullable="false"/>
+				<Property Name="WebAddress" Type="Edm.String"/>
+				<Property Name="EmailAddress" Type="Edm.String" MaxLength="255" Nullable="false"/>
+				<Property Name="PhoneNumber" Type="Edm.String" MaxLength="30"/>
+				<Property Name="Language" Type="Edm.String" MaxLength="2"/>
+				<Property Name="Industry" Type="Edm.String" MaxLength="60"/>
+				<Property Name="Logo" Type="Edm.String" MaxLength="100"/>
+				<Property Name="CreatedAt" Type="Edm.DateTime" Precision="7"/>
+				<Property Name="ChangedAt" Type="Edm.DateTime" Precision="7"/>
+				<NavigationProperty Name="ToProjects" Relationship="talent.Assoc_Client_Projects" FromRole="FromRole_Assoc_Client_Projects"
+					ToRole="ToRole_Assoc_Client_Projects"/>
+			</EntityType>
+			<EntityType Name="Competence">
+				<Key>
+					<PropertyRef Name="CompetenceID"/>
+				</Key>
+				<Property Name="CompetenceID" Type="Edm.String" MaxLength="10" Nullable="false"/>
+				<Property Name="EmployeeID" Type="Edm.String" MaxLength="10"/>
+				<Property Name="ProjectID" Type="Edm.String" MaxLength="10"/>
+				<Property Name="SkillName" Type="Edm.String" MaxLength="100" Nullable="false"/>
+				<Property Name="Value" Type="Edm.String" MaxLength="1" Nullable="false"/>
+				<NavigationProperty Name="ToProject" Relationship="talent.Assoc_Project_Competences" FromRole="ToRole_Assoc_Project_Competences"
+					ToRole="FromRole_Assoc_Project_Competences"/>
+				<NavigationProperty Name="ToEmployee" Relationship="talent.Assoc_Employee_Competences" FromRole="ToRole_Assoc_Employee_Competences"
+					ToRole="FromRole_Assoc_Employee_Competences"/>
+			</EntityType>
+			<Association Name="Assoc_Employee_ProjectAssignments">
+				<End Type="talent.Employee" Multiplicity="1" Role="FromRole_Assoc_Employee_ProjectAssignments"/>
+				<End Type="talent.ProjectAssignment" Multiplicity="*" Role="ToRole_Assoc_Employee_ProjectAssignments"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_Assoc_Employee_ProjectAssignments">
+						<PropertyRef Name="EmployeeID"/>
+					</Principal>
+					<Dependent Role="ToRole_Assoc_Employee_ProjectAssignments">
+						<PropertyRef Name="EmployeeID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="Assoc_Project_ProjectAssignments">
+				<End Type="talent.Project" Multiplicity="1" Role="FromRole_Assoc_Project_ProjectAssignments"/>
+				<End Type="talent.ProjectAssignment" Multiplicity="*" Role="ToRole_Assoc_Project_ProjectAssignments"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_Assoc_Project_ProjectAssignments">
+						<PropertyRef Name="ProjectID"/>
+					</Principal>
+					<Dependent Role="ToRole_Assoc_Project_ProjectAssignments">
+						<PropertyRef Name="ProjectID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="Assoc_Client_Projects">
+				<End Type="talent.Client" Multiplicity="1" Role="FromRole_Assoc_Client_Projects"/>
+				<End Type="talent.Project" Multiplicity="*" Role="ToRole_Assoc_Client_Projects"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_Assoc_Client_Projects">
+						<PropertyRef Name="ClientID"/>
+					</Principal>
+					<Dependent Role="ToRole_Assoc_Client_Projects">
+						<PropertyRef Name="ContractorID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="Assoc_Employee_Competences">
+				<End Type="talent.Employee" Multiplicity="1" Role="FromRole_Assoc_Employee_Competences"/>
+				<End Type="talent.Competence" Multiplicity="*" Role="ToRole_Assoc_Employee_Competences"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_Assoc_Employee_Competences">
+						<PropertyRef Name="EmployeeID"/>
+					</Principal>
+					<Dependent Role="ToRole_Assoc_Employee_Competences">
+						<PropertyRef Name="EmployeeID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="Assoc_Project_Competences">
+				<End Type="talent.Project" Multiplicity="1" Role="FromRole_Assoc_Project_Competences"/>
+				<End Type="talent.Competence" Multiplicity="*" Role="ToRole_Assoc_Project_Competences"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_Assoc_Project_Competences">
+						<PropertyRef Name="ProjectID"/>
+					</Principal>
+					<Dependent Role="ToRole_Assoc_Project_Competences">
+						<PropertyRef Name="ProjectID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityContainer Name="talentEntities" m:IsDefaultEntityContainer="true" xmlns:p7="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+				<EntitySet EntityType="talent.Employee" Name="Employee"/>
+				<EntitySet EntityType="talent.Project" Name="Project"/>
+				<EntitySet EntityType="talent.ProjectAssignment" Name="ProjectAssignment"/>
+				<EntitySet EntityType="talent.Client" Name="Client"/>
+				<EntitySet EntityType="talent.Competence" Name="Competence"/>
+				<AssociationSet Association="talent.Assoc_Employee_ProjectAssignments" Name="Assoc_Employee_ProjectAssignments_AssocSet">
+					<End EntitySet="Employee" Role="FromRole_Assoc_Employee_ProjectAssignments"/>
+					<End EntitySet="ProjectAssignment" Role="ToRole_Assoc_Employee_ProjectAssignments"/>
+				</AssociationSet>
+				<AssociationSet Association="talent.Assoc_Project_ProjectAssignments" Name="Assoc_Project_ProjectAssignments_AssocSet">
+					<End EntitySet="Project" Role="FromRole_Assoc_Project_ProjectAssignments"/>
+					<End EntitySet="ProjectAssignment" Role="ToRole_Assoc_Project_ProjectAssignments"/>
+				</AssociationSet>
+				<AssociationSet Association="talent.Assoc_Client_Projects" Name="Assoc_Client_Projects_AssocSet">
+					<End EntitySet="Client" Role="FromRole_Assoc_Client_Projects"/>
+					<End EntitySet="Project" Role="ToRole_Assoc_Client_Projects"/>
+				</AssociationSet>
+				<AssociationSet Association="talent.Assoc_Employee_Competences" Name="Assoc_Employee_Competences_AssocSet">
+					<End EntitySet="Employee" Role="FromRole_Assoc_Employee_Competences"/>
+					<End EntitySet="Competence" Role="ToRole_Assoc_Employee_Competences"/>
+				</AssociationSet>
+				<AssociationSet Association="talent.Assoc_Project_Competences" Name="Assoc_Project_Competences_AssocSet">
+					<End EntitySet="Project" Role="FromRole_Assoc_Project_Competences"/>
+					<End EntitySet="Competence" Role="ToRole_Assoc_Project_Competences"/>
+				</AssociationSet>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

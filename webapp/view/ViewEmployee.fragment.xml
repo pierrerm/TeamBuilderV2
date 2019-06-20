@@ -1,0 +1,86 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns="sap.m"
+	xmlns:uxap="sap.uxap" xmlns:tnt="sap.tnt">
+	<Dialog id="viewEmployeeDialog" title="View Employee" xmlns:f="sap.f">
+		<l:Grid defaultSpan="L12 M12 S12" width="auto">
+			<l:content>
+				<form:SimpleForm maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4"
+					emptySpanM="4" columnsL="2" columnsM="2">
+					<form:content>
+						<l:VerticalLayout>
+							<l:HorizontalLayout class="sapUiSmallMarginBottom">
+								<f:Avatar src="{employeeView>/Headshot}" displaySize="XL" fallbackIcon="sap-icon://employee"/>
+								<l:VerticalLayout class="sapUiMediumMargin">
+									<Title text="{employeeView>/LastName}" level="H1" class="myBold myTitle sapUiTinyMarginBottom"/>
+									<Text id="firstName" text="{employeeView>/FirstName}" class="mySubTitle"/>
+								</l:VerticalLayout>
+							</l:HorizontalLayout>
+							<Title text="General Information" level="H1" class="sapUiTinyMarginBottom myBold"/>
+							<l:HorizontalLayout>
+								<l:VerticalLayout>
+									<!--<l:HorizontalLayout class="sapUiTinyMarginBottom">-->
+										<Label text="Position:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+									<!--</l:HorizontalLayout>-->
+									<!--<l:HorizontalLayout class="sapUiTinyMarginBottom">-->
+										<Label text="Language:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+									<!--</l:HorizontalLayout>-->
+									<!--<l:HorizontalLayout>-->
+										<Label text="Experience:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+									<!--</l:HorizontalLayout>-->
+								</l:VerticalLayout>
+								<l:VerticalLayout>
+									<Text text="{employeeView>/Position}" class="sapUiTinyMarginBottom"/>
+									<Text text="{employeeView>/Language}" class="sapUiTinyMarginBottom"/>
+									<Text text="{ path: 'employeeView>/DateOfArrival', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'yyyy/MM/dd', relative: true, relativeScale: 'auto'}}"/>
+								</l:VerticalLayout>
+							</l:HorizontalLayout>
+							<Title text="Contact Information" level="H1" class="sapUiSmallMarginTop sapUiTinyMarginBottom myBold"/>
+							<l:HorizontalLayout>
+								<l:VerticalLayout>
+									<!--<l:HorizontalLayout class="sapUiTinyMarginBottom">-->
+										<Label text="Address:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+										
+									<!--</l:HorizontalLayout>-->
+									<!--<l:HorizontalLayout class="sapUiTinyMarginBottom">-->
+										<Label text="Email:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+										
+									<!--</l:HorizontalLayout>-->
+									<!--<l:HorizontalLayout>-->
+										<Label text="Phone:" class="sapUiTinyMarginEnd"/>
+										
+									<!--</l:HorizontalLayout>-->
+								</l:VerticalLayout>
+								<l:VerticalLayout>
+									<Text text="{employeeView>/Address}" class="sapUiTinyMarginBottom"/>
+									<Link text="{employeeView>/EmailAddress}" press="onSendEmployeeEmail" class="sapUiTinyMarginBottom"/>
+									<Text id="phoneNum" text="{employeeView>/PhoneNumber}"/>
+								</l:VerticalLayout>
+							</l:HorizontalLayout>
+							<Title text="Comptetences" level="H1" class="sapUiSmallMarginTop sapUiTinyMarginBottom myBold"/>
+							<l:HorizontalLayout>
+								<l:VerticalLayout>
+									<!--<l:HorizontalLayout class="sapUiTinyMarginBottom">-->
+										<Label id="elpi1" text="{employeeView>/Competence1}:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+										
+									<!--</l:HorizontalLayout>-->
+									<!--<l:HorizontalLayout>-->
+										<Label id="elpi2" text="{employeeView>/Competence2}:" class="sapUiTinyMarginEnd"/>
+										
+									<!--</l:HorizontalLayout>-->
+								</l:VerticalLayout>
+								<l:VerticalLayout>
+									<tnt:InfoLabel id="epi1" colorScheme="{ path: '{employeeView>/Competence1Value}', formatter: '.formatter.competenceColor2' }"
+										text="{employeeView>/Competence1Value}/10" class="sapUiTinyMarginBottom"/>
+									<tnt:InfoLabel id="epi2" colorScheme="{ path: '{employeeView>/Competence2Value}', formatter: '.formatter.competenceColor2' }"
+										text="{employeeView>/Competence2Value}/10" class="sapUiTinyMarginBottom"/>
+								</l:VerticalLayout>
+							</l:HorizontalLayout>
+						</l:VerticalLayout>
+					</form:content>
+				</form:SimpleForm>
+			</l:content>
+		</l:Grid>
+		<buttons>
+			<Button text="Close" press="onCloseViewEmployee"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

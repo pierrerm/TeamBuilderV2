@@ -1,0 +1,1261 @@
+[{
+	"CompetenceID": "5000000001",
+	"EmployeeID": "",
+	"ProjectID": "2000000001",
+	"SkillName": "Database Conception",
+	"Percentage": "Percentage 1",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%201')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%201')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%201')/ToEmployee"
+		}
+	},
+	"Value": "5"
+}, {
+	"CompetenceID": "5000000002",
+	"EmployeeID": "",
+	"ProjectID": "2000000001",
+	"SkillName": "Server Architecture",
+	"Percentage": "Percentage 2",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%202')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%202')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%202')/ToEmployee"
+		}
+	},
+	"Value": "7"
+}, {
+	"CompetenceID": "5000000003",
+	"EmployeeID": "",
+	"ProjectID": "2000000002",
+	"SkillName": "SAP BI Configuration",
+	"Percentage": "Percentage 3",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%203')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%203')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%203')/ToEmployee"
+		}
+	},
+	"Value": "8"
+}, {
+	"CompetenceID": "5000000004",
+	"EmployeeID": "",
+	"ProjectID": "2000000002",
+	"SkillName": "Process Integration",
+	"Percentage": "Percentage 4",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%204')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%204')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%204')/ToEmployee"
+		}
+	},
+	"Value": "3"
+}, {
+	"CompetenceID": "5000000005",
+	"EmployeeID": "",
+	"ProjectID": "2000000003",
+	"SkillName": "AWS Development",
+	"Percentage": "Percentage 5",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%205')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%205')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%205')/ToEmployee"
+		}
+	},
+	"Value": "4"
+}, {
+	"CompetenceID": "5000000006",
+	"EmployeeID": "",
+	"ProjectID": "2000000003",
+	"SkillName": "AWS Configuration",
+	"Percentage": "Percentage 6",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%206')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%206')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%206')/ToEmployee"
+		}
+	},
+	"Value": "8"
+}, {
+	"CompetenceID": "5000000007",
+	"EmployeeID": "",
+	"ProjectID": "2000000004",
+	"SkillName": "CRM Knowledge",
+	"Percentage": "Percentage 7",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%207')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%207')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%207')/ToEmployee"
+		}
+	},
+	"Value": "4"
+}, {
+	"CompetenceID": "5000000008",
+	"EmployeeID": "",
+	"ProjectID": "2000000004",
+	"SkillName": "C/4Hana Configuration",
+	"Percentage": "Percentage 8",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%208')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%208')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%208')/ToEmployee"
+		}
+	},
+	"Value": "8"
+}, {
+	"CompetenceID": "5000000009",
+	"EmployeeID": "",
+	"ProjectID": "2000000005",
+	"SkillName": "Hana Knowledge",
+	"Percentage": "Percentage 9",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%209')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%209')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%209')/ToEmployee"
+		}
+	},
+	"Value": "3"
+}, {
+	"CompetenceID": "5000000010",
+	"EmployeeID": "",
+	"ProjectID": "2000000005",
+	"SkillName": "S/4Hana Configuration",
+	"Percentage": "Percentage 10",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2010')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2010')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2010')/ToEmployee"
+		}
+	},
+	"Value": "7"
+}, {
+	"CompetenceID": "5000000011",
+	"EmployeeID": "",
+	"ProjectID": "2000000001",
+	"SkillName": "ABAP Development",
+	"Percentage": "Percentage 11",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2011')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2011')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2011')/ToEmployee"
+		}
+	},
+	"Value": "5"
+}, {
+	"CompetenceID": "5000000012",
+	"EmployeeID": "",
+	"ProjectID": "2000000001",
+	"SkillName": "SAPUI5 Development",
+	"Percentage": "Percentage 12",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2012')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2012')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2012')/ToEmployee"
+		}
+	},
+	"Value": "3"
+}, {
+	"CompetenceID": "5000000013",
+	"EmployeeID": "",
+	"ProjectID": "2000000002",
+	"SkillName": "Business Analytics",
+	"Percentage": "Percentage 13",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2013')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2013')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2013')/ToEmployee"
+		}
+	},
+	"Value": "5"
+}, {
+	"CompetenceID": "5000000014",
+	"EmployeeID": "",
+	"ProjectID": "2000000002",
+	"SkillName": "Financial Consulting",
+	"Percentage": "Percentage 14",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2014')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2014')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2014')/ToEmployee"
+		}
+	},
+	"Value": "3"
+}, {
+	"CompetenceID": "5000000015",
+	"EmployeeID": "",
+	"ProjectID": "2000000003",
+	"SkillName": "Database Conception",
+	"Percentage": "Percentage 15",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2015')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2015')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2015')/ToEmployee"
+		}
+	},
+	"Value": "5"
+}, {
+	"CompetenceID": "5000000016",
+	"EmployeeID": "",
+	"ProjectID": "2000000003",
+	"SkillName": "Data Migration",
+	"Percentage": "Percentage 16",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2016')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2016')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2016')/ToEmployee"
+		}
+	},
+	"Value": "6"
+}, {
+	"CompetenceID": "5000000017",
+	"EmployeeID": "",
+	"ProjectID": "2000000004",
+	"SkillName": "Web Development",
+	"Percentage": "Percentage 17",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2017')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2017')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2017')/ToEmployee"
+		}
+	},
+	"Value": "4"
+}, {
+	"CompetenceID": "5000000018",
+	"EmployeeID": "",
+	"ProjectID": "2000000004",
+	"SkillName": "SAPUI5 Development",
+	"Percentage": "Percentage 18",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2018')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2018')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2018')/ToEmployee"
+		}
+	},
+	"Value": "5"
+}, {
+	"CompetenceID": "5000000019",
+	"EmployeeID": "",
+	"ProjectID": "2000000005",
+	"SkillName": "ABAP Development",
+	"Percentage": "Percentage 19",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2019')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2019')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2019')/ToEmployee"
+		}
+	},
+	"Value": "6"
+}, {
+	"CompetenceID": "5000000020",
+	"EmployeeID": "",
+	"ProjectID": "2000000005",
+	"SkillName": "SAPUI5 Development",
+	"Percentage": "Percentage 20",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2020')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2020')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2020')/ToEmployee"
+		}
+	},
+	"Value": "4"
+}, {
+	"CompetenceID": "5000000021",
+	"EmployeeID": "1000000001",
+	"ProjectID": "",
+	"SkillName": "Financial Consulting",
+	"Percentage": "Percentage 21",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2021')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2021')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2021')/ToEmployee"
+		}
+	},
+	"Value": "8"
+}, {
+	"CompetenceID": "5000000022",
+	"EmployeeID": "1000000001",
+	"ProjectID": "",
+	"SkillName": "Business Analytics",
+	"Percentage": "Percentage 22",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2022')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2022')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2022')/ToEmployee"
+		}
+	},
+	"Value": "6"
+}, {
+	"CompetenceID": "5000000023",
+	"EmployeeID": "1000000002",
+	"ProjectID": "",
+	"SkillName": "Business Analytics",
+	"Percentage": "Percentage 23",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2023')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2023')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2023')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000024",
+	"EmployeeID": "1000000002",
+	"ProjectID": "",
+	"SkillName": "SAP BI Configuration",
+	"Percentage": "Percentage 24",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2024')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2024')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2024')/ToEmployee"
+		}
+	},
+	"Value": "6"
+}, {
+	"CompetenceID": "5000000025",
+	"EmployeeID": "1000000003",
+	"ProjectID": "",
+	"SkillName": "AWS Development",
+	"Percentage": "Percentage 25",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2025')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2025')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2025')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000026",
+	"EmployeeID": "1000000003",
+	"ProjectID": "",
+	"SkillName": "AWS Configuration",
+	"Percentage": "Percentage 26",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2026')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2026')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2026')/ToEmployee"
+		}
+	},
+	"Value": "6"
+}, {
+	"CompetenceID": "5000000027",
+	"EmployeeID": "1000000004",
+	"ProjectID": "",
+	"SkillName": "SAP BI Configuration",
+	"Percentage": "Percentage 27",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2027')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2027')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2027')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000028",
+	"EmployeeID": "1000000004",
+	"ProjectID": "",
+	"SkillName": "Business Analytics",
+	"Percentage": "Percentage 28",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2028')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2028')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2028')/ToEmployee"
+		}
+	},
+	"Value": "5"
+}, {
+	"CompetenceID": "5000000029",
+	"EmployeeID": "1000000005",
+	"ProjectID": "",
+	"SkillName": "Database Conception",
+	"Percentage": "Percentage 29",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2029')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2029')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2029')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000030",
+	"EmployeeID": "1000000005",
+	"ProjectID": "",
+	"SkillName": "ABAP Development",
+	"Percentage": "Percentage 30",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2030')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2030')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2030')/ToEmployee"
+		}
+	},
+	"Value": "8"
+}, {
+	"CompetenceID": "5000000031",
+	"EmployeeID": "1000000006",
+	"ProjectID": "",
+	"SkillName": "Server Architecture",
+	"Percentage": "Percentage 31",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2031')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2031')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2031')/ToEmployee"
+		}
+	},
+	"Value": "6"
+}, {
+	"CompetenceID": "5000000032",
+	"EmployeeID": "1000000006",
+	"ProjectID": "",
+	"SkillName": "SAPUI5 Development",
+	"Percentage": "Percentage 32",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2032')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2032')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2032')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000033",
+	"EmployeeID": "1000000007",
+	"ProjectID": "",
+	"SkillName": "Server Architecture",
+	"Percentage": "Percentage 33",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2033')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2033')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2033')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000034",
+	"EmployeeID": "1000000007",
+	"ProjectID": "",
+	"SkillName": "Database Conception",
+	"Percentage": "Percentage 34",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2034')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2034')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2034')/ToEmployee"
+		}
+	},
+	"Value": "7"
+}, {
+	"CompetenceID": "5000000035",
+	"EmployeeID": "1000000008",
+	"ProjectID": "",
+	"SkillName": "ABAP Development",
+	"Percentage": "Percentage 35",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2035')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2035')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2035')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000036",
+	"EmployeeID": "1000000008",
+	"ProjectID": "",
+	"SkillName": "Data Migration",
+	"Percentage": "Percentage 36",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2036')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2036')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2036')/ToEmployee"
+		}
+	},
+	"Value": "7"
+}, {
+	"CompetenceID": "5000000037",
+	"EmployeeID": "1000000009",
+	"ProjectID": "",
+	"SkillName": "SAP BI Configuration",
+	"Percentage": "Percentage 37",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2037')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2037')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2037')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000038",
+	"EmployeeID": "1000000009",
+	"ProjectID": "",
+	"SkillName": "Business Analytics",
+	"Percentage": "Percentage 38",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2038')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2038')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2038')/ToEmployee"
+		}
+	},
+	"Value": "6"
+}, {
+	"CompetenceID": "5000000039",
+	"EmployeeID": "1000000010",
+	"ProjectID": "",
+	"SkillName": "Financial Consulting",
+	"Percentage": "Percentage 39",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2039')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2039')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2039')/ToEmployee"
+		}
+	},
+	"Value": "4"
+}, {
+	"CompetenceID": "5000000040",
+	"EmployeeID": "1000000010",
+	"ProjectID": "",
+	"SkillName": "CRM Knowledge",
+	"Percentage": "Percentage 40",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2040')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2040')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2040')/ToEmployee"
+		}
+	},
+	"Value": "6"
+}, {
+	"CompetenceID": "5000000041",
+	"EmployeeID": "1000000011",
+	"ProjectID": "",
+	"SkillName": "CRM Knowledge",
+	"Percentage": "Percentage 41",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2041')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2041')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2041')/ToEmployee"
+		}
+	},
+	"Value": "7"
+}, {
+	"CompetenceID": "5000000042",
+	"EmployeeID": "1000000011",
+	"ProjectID": "",
+	"SkillName": "Web Development",
+	"Percentage": "Percentage 42",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2042')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2042')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2042')/ToEmployee"
+		}
+	},
+	"Value": "8"
+}, {
+	"CompetenceID": "5000000043",
+	"EmployeeID": "1000000012",
+	"ProjectID": "",
+	"SkillName": "C/4Hana Configuration",
+	"Percentage": "Percentage 43",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2043')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2043')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2043')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000044",
+	"EmployeeID": "1000000012",
+	"ProjectID": "",
+	"SkillName": "CRM Knowledge",
+	"Percentage": "Percentage 44",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2044')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2044')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2044')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000045",
+	"EmployeeID": "1000000013",
+	"ProjectID": "",
+	"SkillName": "AWS Development",
+	"Percentage": "Percentage 45",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2045')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2045')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2045')/ToEmployee"
+		}
+	},
+	"Value": "6"
+}, {
+	"CompetenceID": "5000000046",
+	"EmployeeID": "1000000013",
+	"ProjectID": "",
+	"SkillName": "AWS Configuration",
+	"Percentage": "Percentage 46",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2046')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2046')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2046')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000047",
+	"EmployeeID": "1000000014",
+	"ProjectID": "",
+	"SkillName": "Process Integration",
+	"Percentage": "Percentage 47",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2047')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2047')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2047')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000048",
+	"EmployeeID": "1000000014",
+	"ProjectID": "",
+	"SkillName": "Data Migration",
+	"Percentage": "Percentage 48",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2048')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2048')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2048')/ToEmployee"
+		}
+	},
+	"Value": "8"
+}, {
+	"CompetenceID": "5000000049",
+	"EmployeeID": "1000000015",
+	"ProjectID": "",
+	"SkillName": "ABAP Development",
+	"Percentage": "Percentage 49",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2049')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2049')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2049')/ToEmployee"
+		}
+	},
+	"Value": "8"
+}, {
+	"CompetenceID": "5000000050",
+	"EmployeeID": "1000000015",
+	"ProjectID": "",
+	"SkillName": "Hana Knowledge",
+	"Percentage": "Percentage 50",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2050')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2050')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2050')/ToEmployee"
+		}
+	},
+	"Value": "7"
+}, {
+	"CompetenceID": "5000000051",
+	"EmployeeID": "1000000016",
+	"ProjectID": "",
+	"SkillName": "Web Development",
+	"Percentage": "Percentage 51",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2051')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2051')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2051')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000052",
+	"EmployeeID": "1000000016",
+	"ProjectID": "",
+	"SkillName": "SAPUI5 Development",
+	"Percentage": "Percentage 52",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2052')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2052')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2052')/ToEmployee"
+		}
+	},
+	"Value": "7"
+}, {
+	"CompetenceID": "5000000053",
+	"EmployeeID": "1000000017",
+	"ProjectID": "",
+	"SkillName": "S/4Hana Configuration",
+	"Percentage": "Percentage 53",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2053')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2053')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2053')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000054",
+	"EmployeeID": "1000000017",
+	"ProjectID": "",
+	"SkillName": "Hana Knowledge",
+	"Percentage": "Percentage 54",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2054')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2054')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2054')/ToEmployee"
+		}
+	},
+	"Value": "7"
+}, {
+	"CompetenceID": "5000000055",
+	"EmployeeID": "1000000018",
+	"ProjectID": "",
+	"SkillName": "SAPUI5 Development",
+	"Percentage": "Percentage 55",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2055')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2055')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2055')/ToEmployee"
+		}
+	},
+	"Value": "8"
+}, {
+	"CompetenceID": "5000000056",
+	"EmployeeID": "1000000018",
+	"ProjectID": "",
+	"SkillName": "Database Conception",
+	"Percentage": "Percentage 56",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2056')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2056')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2056')/ToEmployee"
+		}
+	},
+	"Value": "7"
+}, {
+	"CompetenceID": "5000000057",
+	"EmployeeID": "1000000019",
+	"ProjectID": "",
+	"SkillName": "Hana Knowledge",
+	"Percentage": "Percentage 57",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2057')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2057')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2057')/ToEmployee"
+		}
+	},
+	"Value": "9"
+}, {
+	"CompetenceID": "5000000058",
+	"EmployeeID": "1000000019",
+	"ProjectID": "",
+	"SkillName": "Server Architecture",
+	"Percentage": "Percentage 58",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2058')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2058')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2058')/ToEmployee"
+		}
+	},
+	"Value": "8"
+}, {
+	"CompetenceID": "5000000059",
+	"EmployeeID": "1000000020",
+	"ProjectID": "",
+	"SkillName": "Financial Consulting",
+	"Percentage": "Percentage 59",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2059')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2059')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2059')/ToEmployee"
+		}
+	},
+	"Value": "7"
+}, {
+	"CompetenceID": "5000000060",
+	"EmployeeID": "1000000020",
+	"ProjectID": "",
+	"SkillName": "Business Analytics",
+	"Percentage": "Percentage 60",
+	"__metadata": {
+		"uri": "Competence('CompetenceID%2060')",
+		"type": "talent.Competence"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2060')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "Competence('CompetenceID%2060')/ToEmployee"
+		}
+	},
+	"Value": "6"
+}]

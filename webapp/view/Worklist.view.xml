@@ -1,0 +1,94 @@
+<mvc:View controllerName="team.builder.TeamBuilder.controller.Worklist" xmlns="sap.m" xmlns:semantic="sap.f.semantic" xmlns:tnt="sap.tnt"
+	xmlns:si="sap.suite.ui.commons.statusindicator" xmlns:control="team.builder.TeamBuilder.control" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns:dnd="sap.ui.core.dnd" xmlns:f="sap.f">
+	<semantic:SemanticPage id="masterPage" preserveHeaderStateOnScroll="true" toggleHeaderOnTitleClick="false">
+		<semantic:titleHeading>
+			<l:HorizontalLayout id="_IDEGen_horizontallayout0">
+				<f:Avatar src="sap-icon://group" displaySize="XL"/>
+				<l:VerticalLayout id="_IDEGen_verticallayout0" class="sapUiMediumMarginTop sapUiSmallMarginBegin">
+					<Title id="_IDEGen_title0" text="Team Builder" level="H1"/>
+					<Text id="_IDEGen_text0" text="Competence management, project-team assembly"/>
+				</l:VerticalLayout>
+			</l:HorizontalLayout>
+		</semantic:titleHeading>
+		<semantic:content>
+			<Table id="table" width="auto" class="sapFDynamicPageAlignContent" growing="true" growingThreshold="10"
+				items="{ path: '/Project', sorter: { path: 'DateStarted', descending: true }, parameters: { 'expand': 'ToClient' }}"
+				busyIndicatorDelay="{worklistView>/tableBusyDelay}" noDataText="{worklistView>/tableNoDataText}" mode="SingleSelectMaster"
+				updateFinished=".onUpdateFinished" selectionChange="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+				action:wiring="\{'selectionChange':\{'navigation':\{'routeName':'object'\}\}\}">
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title id="tableHeader" text="{worklistView>/worklistTableTitle}" level="H3"/>
+						<ToolbarSpacer/>
+						<control:SearchInput width="auto" placeholder="Search" id="searchInput" valueLiveUpdate="true" liveChange=".onSearch"
+							valueHelpRequest=".onSearch" submit=".onSearch"/>
+						<!--<SearchField id="searchField" tooltip="{i18n>detailSearchTooltip}" search=".onSearch">-->
+						<!--	<layoutData>-->
+						<!--		<OverflowToolbarLayoutData maxWidth="200px" priority="NeverOverflow"/>-->
+						<!--	</layoutData>-->
+						<!--</SearchField>-->
+						<Button id="sortButton" press=".onOpenViewSettings" icon="sap-icon://sort" type="Transparent" tooltip="Sort projects"/>
+						<control:DeleteButton icon="sap-icon://cancel" press=".onCancel" type="Transparent" tooltip="Click or drag to cancel/reactivate a project">
+							<control:dragDropConfig>
+								<dnd:DropInfo drop=".onCancel"/>
+							</control:dragDropConfig>
+						</control:DeleteButton>
+						<Button id="addProject" icon="sap-icon://add" type="Transparent" press="onAddProject" tooltip="Create new project"/>
+						<!--<SearchField id="searchField" tooltip="{i18n>worklistSearchTooltip}" search=".onSearch">-->
+						<!--	<layoutData>-->
+						<!--		<OverflowToolbarLayoutData maxWidth="200px" priority="NeverOverflow"/>-->
+						<!--	</layoutData>-->
+						<!--</SearchField>-->
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="_IDEGen_column1">
+						<Text id="_IDEGen_text1" text="Project Name"/>
+					</Column>
+					<Column id="_IDEGen_column2" minScreenWidth="Tablet" demandPopin="true" hAlign="End">
+						<Text id="_IDEGen_text2" text="Start Date"/>
+					</Column>
+					<Column id="_IDEGen_column6" minScreenWidth="Tablet" demandPopin="true" hAlign="End">
+						<Text id="_IDEGen_text6" text="End Date"/>
+					</Column>
+					<Column id="_IDEGen_column3" hAlign="End">
+						<Text id="_IDEGen_text3" text="Status"/>
+					</Column>
+					<Column id="_IDEGen_column4" minScreenWidth="Tablet" demandPopin="true" hAlign="End">
+						<Text id="_IDEGen_text4" text="Category"/>
+					</Column>
+					<Column id="_IDEGen_column0" hAlign="End">
+						<Text id="_IDEGen_textu" text="Language"/>
+					</Column>
+				</columns>
+				<dragDropConfig>
+					<dnd:DragDropInfo sourceAggregation="items" targetAggregation="items" dropPosition="Between" drop="onReorderDrop"/>
+				</dragDropConfig>
+				<items>
+					<ColumnListItem id="_IDEGen_columnlistitem0" selected="{= ${ProjectID} === ${worklistView>/selectedItemId} }" type="Navigation">
+						<cells>
+							<l:HorizontalLayout id="CustomColumn1H" class="sapUiSmallMarginEnd">
+								<f:Avatar src="{ToClient/Logo}" displaySize="S" fallbackIcon="sap-icon://building"/>
+								<l:VerticalLayout id="CustomColumn1V" class="sapUiTinyMarginTop sapUiTinyMarginBegin">
+									<Title id="CustomColumn1Title" text="{Name}" level="H4" class="myBold"/>
+									<Text id="CustomColumn1Text" text="{ToClient/CompanyName}"/>
+								</l:VerticalLayout>
+							</l:HorizontalLayout>
+							<!--<ObjectIdentifier id="_IDEGen_objectidentifier0" title="{Name}" text="{ToClient/CompanyName}"/>-->
+							<Text id="_IDEGen_text5" text="{ path: 'DateStarted', type: 'sap.ui.model.type.Date', formatOptions: { style: 'medium' } }"/>
+							<Text id="_IDEGen_textr" text="{ path: 'DateEnd', type: 'sap.ui.model.type.Date', formatOptions: { style: 'medium' } }"/>
+							<tnt:InfoLabel text="{ parts: ['DateStarted','DateEnd','Canceled'], formatter: '.formatter.statusText' }"
+								colorScheme="{ parts: ['DateStarted','DateEnd','Canceled'], formatter: '.formatter.statusColor' }"/>
+							<ObjectAttribute id="_IDEGen_objectnumber1" text="{Category}"/>
+							<ObjectAttribute id="_IDEGen_objectnumber0" text="{ToClient/Language}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</semantic:content>
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press=".onShareEmailPress"/>
+		</semantic:sendEmailAction>
+	</semantic:SemanticPage>
+</mvc:View>

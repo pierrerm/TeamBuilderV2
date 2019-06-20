@@ -1,0 +1,221 @@
+<mvc:View controllerName="team.builder.TeamBuilder.controller.Object" xmlns="sap.m" xmlns:semantic="sap.f.semantic" xmlns:tnt="sap.tnt"
+	xmlns:si="sap.suite.ui.commons.statusindicator" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"  xmlns:core="sap.ui.core"
+	xmlns:control="team.builder.TeamBuilder.control" xmlns:dnd="sap.ui.core.dnd" xmlns:f="sap.f" xmlns:uxap="sap.uxap"
+	xmlns:form="sap.ui.layout.form" xmlns:viz.data="sap.viz.ui5.data" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+	xmlns:viz="sap.viz.ui5.controls">
+	<Page showNavButton="true" navButtonPress="onNavBack">
+		<content>
+			<l:DynamicSideContent id="DynamicSideContent" showSideContent="false" equalSplit="false" class="sapUiDSCExplored sapUiContentPadding"
+				containerQuery="true" sideContentFallDown="BelowM" breakpointChanged="handleBreakpointChangeEvent">
+				<l:mainContent>
+					<semantic:SemanticPage id="objectPage" busy="{objectView>/busy}" busyIndicatorDelay="{objectView>/delay}">
+						<semantic:titleHeading>
+							<FlexBox justifyContent="SpaceBetween">
+								<l:HorizontalLayout id="_IDEGen_horizontallayout0">
+									<f:Avatar src="{ToClient/Logo}" displaySize="XL" fallbackIcon="sap-icon://building"/>
+									<l:VerticalLayout id="_IDEGen_verticallayout0" class="sapUiMediumMarginTop sapUiSmallMarginBegin">
+										<Title id="_IDEGen_title0" text="{ToClient/CompanyName}" level="H1"/>
+										<Text id="_IDEGen_text0" text="{Name}"/>
+									</l:VerticalLayout>
+								</l:HorizontalLayout>
+								<!--<Button id="viewCompetences" text="View Competences" tooltip="View team competence chart" type="Emphasized" class="sapUiTinyMarginTop" press=".onViewCompetences"/>-->
+							</FlexBox>
+						</semantic:titleHeading>
+						<semantic:headerContent>
+							<!--<control:Competences id="teamCompetences"/>-->
+							<FlexBox justifyContent="SpaceBetween" alignContent="Center" alignItems="Center">
+								<!--<core:Fragment fragmentName="team.builder.TeamBuilder.view.ViewCompetences" type="XML"/>-->
+								<FlexBox direction="Column" justifyContent="Start" alignContent="Center" alignItems="Center">
+									<Title text="Project Info:" level="H2" class="sapUiTinyMarginBottom"/>
+									<l:HorizontalLayout>
+										<l:VerticalLayout>
+											<l:HorizontalLayout>
+												<Label id="_IDEGen_label1" text="Start Date:" class="sapUiTinyMarginEnd"/>
+												<Text id="_IDEGen_text3" text="{path: 'DateStarted', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'yyyy/MM/dd'}}"/>
+											</l:HorizontalLayout>
+											<l:HorizontalLayout class="sapUiTinyMarginTop">
+												<Label id="_IDEdGen_label1" text="Due Date:" class="sapUiTinyMarginEnd"/>
+												<Text id="_kIDEGen_text3" text="{path: 'DateEnd', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'yyyy/MM/dd'}}"/>
+											</l:HorizontalLayout>
+										</l:VerticalLayout>
+										<l:VerticalLayout class="sapUiSmallMarginBegin">
+											<l:HorizontalLayout>
+												<Label id="_IDEdGen_labee1" text="Last Modifed:" class="sapUiTinyMarginEnd"/>
+												<Text id="_kIDEGen_textd"
+													text="{ path: 'ChangedAt', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'yyyy/MM/dd', relative: true, relativeScale: 'auto'}}"/>
+											</l:HorizontalLayout>
+											<l:HorizontalLayout class="sapUiTinyMarginTop">
+												<Label id="dKAFOIF" text="Status:" class="sapUiTinyMarginEnd"/>
+												<tnt:InfoLabel text="{ parts: ['DateStarted','DateEnd','Canceled'], formatter: '.formatter.statusText' }"
+													colorScheme="{ parts: ['DateStarted','DateEnd','Canceled'], formatter: '.formatter.statusColor' }"/>
+											</l:HorizontalLayout>
+										</l:VerticalLayout>
+									</l:HorizontalLayout>
+								</FlexBox>
+								<FlexBox direction="Column" justifyContent="Start" alignContent="Center" alignItems="Center">
+									<Title text="Competences:" level="H2" class="sapUiTinyMarginBottom"/>
+									<l:HorizontalLayout>
+										<l:VerticalLayout>
+											<!--<l:HorizontalLayout>-->
+												<Label id="lpi1" text="Skill #1:" class="sapUiTinyMarginEnd"/>
+												<!--<tnt:InfoLabel id="pi1" />-->
+													<!--text="{ path: ['competenceView>/Competences/0/Value','competenceView>/Competences/0/Employees'], formatter: '.formatter.competencePercentage' }"-->
+													<!--colorScheme="{ parts: ['competenceView>/Competences/0/Value','competenceView>/Competences/0/Employees'], formatter: '.formatter.competenceColor' }"/>-->
+											<!--</l:HorizontalLayout>-->
+											<!--<l:HorizontalLayout class="sapUiTinyMarginTop">-->
+												<Label id="lpi2" text="Skill #2:" class="sapUiTinyMarginTop sapUiTinyMarginEnd"/>
+												<!--<tnt:InfoLabel id="pi2" />-->
+													<!--text="{ parts: ['competenceView>/Competences/1/Value','competenceView>/Competences/1/Employees'], formatter: '.formatter.competencePercentage' }"-->
+													<!--colorScheme="{ parts: ['competenceView>/Competences/1/Value','competenceView>/Competences/1/Employees'], formatter: '.formatter.competenceColor' }"/>-->
+											<!--</l:HorizontalLayout>-->
+										</l:VerticalLayout>
+										<l:VerticalLayout>
+											<tnt:InfoLabel id="pi1" />
+											<tnt:InfoLabel id="pi2"  class="sapUiTinyMarginTop"/>
+										</l:VerticalLayout>
+										<l:VerticalLayout class="sapUiSmallMarginBegin">
+											<!--<l:HorizontalLayout>-->
+												<Label id="lpi3" text="Skill #3:" class="sapUiTinyMarginEnd"/>
+												<!--<tnt:InfoLabel id="pi3" />-->
+													<!--text="{ parts: ['competenceView>/Competences/2/Value','competenceView>/Competences/2/Employees'], formatter: '.formatter.competencePercentage' }"-->
+													<!--colorScheme="{ parts: ['competenceView>/Competences/2/Value','competenceView>/Competences/2/Employees'], formatter: '.formatter.competenceColor' }"/>-->
+											<!--</l:HorizontalLayout>-->
+											<!--<l:HorizontalLayout class="sapUiTinyMarginTop">-->
+												<Label id="lpi4" text="Skill #4:" class="sapUiTinyMarginTop sapUiTinyMarginEnd"/>
+												<!--<tnt:InfoLabel id="pi4" />-->
+													<!--text="{ parts: ['competenceView>/Competences/3/Value','competenceView>/Competences/3/Employees'], formatter: '.formatter.competencePercentage' }"-->
+													<!--colorScheme="{ parts: ['competenceView>/Competences/3/Value','competenceView>/Competences/3/Employees'], formatter: '.formatter.competenceColor' }"/>-->
+											<!--</l:HorizontalLayout>-->
+										</l:VerticalLayout>
+										<l:VerticalLayout>
+											<tnt:InfoLabel id="pi3" />
+											<tnt:InfoLabel id="pi4" class="sapUiTinyMarginTop"/>
+										</l:VerticalLayout>
+									</l:HorizontalLayout>
+								</FlexBox>
+								<!--<Button id="viewCompetences" text="View Competences" tooltip="View team competence chart" type="Emphasized" class="sapUiTinyMarginTop"-->
+								<!--	press=".onViewCompetences"/>-->
+							</FlexBox>
+						</semantic:headerContent>
+						<semantic:content>
+							<Table id="lineItemsList" growing="true" growingThreshold="5" alternateRowColors="false" width="auto" class="sapFDynamicPageAlignContent"
+								items="{ path: 'ToProjectAssignments', parameters: { 'expand': 'ToEmployee, ToProject/ToClient' }}" mode="SingleSelectMaster"
+								updateFinished=".onListUpdateFinished" noDataText="{i18n>detailLineItemTableNoDataText}"
+								busyIndicatorDelay="{objectView>/lineItemTableDelay}" selectionChange="onViewEmployee">
+								<headerToolbar>
+									<OverflowToolbar>
+										<Title id="tableHeader" text="{objectView>/lineItemListTitle}" level="H3"/>
+										<ToolbarSpacer/>
+										<control:SearchInput width="auto" placeholder="Search" id="searchInput" valueLiveUpdate="true" liveChange=".onSearch"
+											valueHelpRequest=".onSearch" submit=".onSearch"/>
+										<Button id="sortButton" press=".onOpenViewObjectSettings" icon="sap-icon://sort" type="Transparent" tooltip="Sort selected team members"/>
+										<control:DeleteButton icon="sap-icon://delete" press=".onDelete" type="Transparent"
+											tooltip="Click or drag to remove team member from project">
+											<control:dragDropConfig>
+												<dnd:DropInfo drop=".onDelete"/>
+											</control:dragDropConfig>
+										</control:DeleteButton>
+										<Button id="refreshButton" press=".onRefresh" icon="sap-icon://synchronize" type="Transparent" tooltip="Refresh project contents"/>
+										<Button id="showSideContentButton" icon="sap-icon://close-command-field" type="Transparent" press="handleSideContentToggle"
+											tooltip="View available team members"/>
+									</OverflowToolbar>
+								</headerToolbar>
+								<columns>
+									<Column id="_IDEGen_column1">
+										<Text id="_IDEGen_text1" text="Employee Name"/>
+									</Column>
+									<Column id="_IDEGen_column6" minScreenWidth="Tablet" demandPopin="true">
+										<Text id="_IDEGen_text6" text="Position"/>
+									</Column>
+									<Column id="_IDEGen_column2" minScreenWidth="Tablet" demandPopin="true" hAlign="End">
+										<Text id="_IDEGen_text2" text="Experience"/>
+									</Column>
+									<Column id="_IDEGen_column0" hAlign="End">
+										<Text id="_IDEGen_textu" text="Language"/>
+									</Column>
+								</columns>
+								<dragDropConfig>
+									<dnd:DragInfo groupName="selected2available" sourceAggregation="items"/>
+									<dnd:DropInfo groupName="available2selected" targetAggregation="items" dropPosition="Between" drop="onDropSelectedProductsTable"/>
+									<dnd:DragDropInfo sourceAggregation="items" targetAggregation="items" dropPosition="Between" drop="onReorderDrop"/>
+								</dragDropConfig>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<l:HorizontalLayout id="CustomColumn1H" class="sapUiSmallMarginEnd">
+												<f:Avatar src="{ToEmployee/Headshot}" displaySize="S" fallbackIcon="sap-icon://employee"/>
+												<l:VerticalLayout id="CustomColumn1V" class="sapUiTinyMarginTop sapUiTinyMarginBegin">
+													<Title id="CustomColumn1Title" text="{ToEmployee/LastName}" level="H4" class="myBold"/>
+													<Text id="CustomColumn1Text" text="{ToEmployee/FirstName}"/>
+												</l:VerticalLayout>
+											</l:HorizontalLayout>
+											<!--<ObjectIdentifier title="{ToEmployee/LastName}" text="{ToEmployee/FirstName}"/>-->
+											<ObjectAttribute text="{ToEmployee/Position}"/>
+											<ObjectAttribute
+												text="{ path: 'ToEmployee/DateOfArrival', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'yyyy/MM/dd', relative: true, relativeScale: 'auto'}}"/>
+											<ObjectAttribute text="{ToEmployee/Language}"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</semantic:content>
+						<!--Semantic ShareMenu Buttons-->
+						<semantic:sendEmailAction>
+							<semantic:SendEmailAction id="shareEmail" press=".onSendEmailPress"/>
+						</semantic:sendEmailAction>
+					</semantic:SemanticPage>
+				</l:mainContent>
+				<l:sideContent>
+					<Table id="AvailableItemsList" growing="true" growingThreshold="10" alternateRowColors="false" width="auto"
+						class="sapFDynamicPageAlignContent" items="{path: '/Employee', parameters: {'expand': 'ToCompetences'}}"
+						updateFinished=".onListUpdateFinished2" noDataText="{i18n>detailLineItemTableNoDataText}"  mode="SingleSelectMaster"
+						busyIndicatorDelay="{objectView>/AvailableItemTableDelay}" selectionChange="onViewEmployee">
+						<headerToolbar>
+							<OverflowToolbar>
+								<Title id="tableHeader2" text="{objectView>/AvailableItemListTitle}" level="H3"/>
+								<ToolbarSpacer/>
+								<control:SearchInput width="auto" placeholder="Search" id="searchInput2" valueLiveUpdate="true" liveChange=".onSearch2"
+									valueHelpRequest=".onSearch2" submit=".onSearch2"/>
+								<!--<SearchField id="searchField2" tooltip="{i18n>detailSearchTooltip}" search=".onSearch2">-->
+								<!--	<layoutData>-->
+								<!--		<OverflowToolbarLayoutData maxWidth="200px" priority="NeverOverflow"/>-->
+								<!--	</layoutData>-->
+								<!--</SearchField>-->
+								<Button id="sortButton2" press=".onOpenViewObjectSettings2" icon="sap-icon://sort" type="Transparent" tooltip="Sort available team members"/>
+							</OverflowToolbar>
+						</headerToolbar>
+						<columns>
+							<Column id="_IDEGen_column22">
+								<Text id="_IDEGen_text12" text="Employee Name"/>
+							</Column>
+							<Column id="_IDEGen_column62" minScreenWidth="Tablet" demandPopin="true">
+								<Text id="_IDEGen_text62" text="Position"/>
+							</Column>
+							<Column id="_IDEGen_column222" minScreenWidth="Tablet" demandPopin="true">
+								<Text id="_IDEGen_text22" text="Experience"/>
+							</Column>
+							<Column id="_IDEGen_column02" hAlign="End">
+								<Text id="_IDEGen_textu2" text="Language"/>
+							</Column>
+						</columns>
+						<dragDropConfig>
+							<dnd:DragInfo groupName="available2selected" sourceAggregation="items"/>
+							<dnd:DropInfo groupName="selected2available" drop="onDelete"/>
+						</dragDropConfig>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier title="{LastName}" text="{FirstName}"/>
+									<ObjectAttribute text="{Position}"/>
+									<ObjectAttribute
+										text="{ path: 'DateOfArrival', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'yyyy/MM/dd', relative: true, relativeScale: 'auto'}}"/>
+									<ObjectAttribute text="{Language}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</l:sideContent>
+			</l:DynamicSideContent>
+		</content>
+	</Page>
+</mvc:View>

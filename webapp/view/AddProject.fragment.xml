@@ -1,0 +1,51 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Dialog id="addProjectDialog" title="New Project">
+		<l:Grid defaultSpan="L12 M12 S12" width="auto" id="addProjectGrid">
+			<l:content>
+				<f:SimpleForm id="addProjectForm" maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3"
+					emptySpanL="4" emptySpanM="4" columnsL="2" columnsM="2">
+					<f:content>
+						<l:VerticalLayout>
+							<Title text="General Information" level="H2" class="sapUiTinyMarginBottom"/>
+							<FlexBox justifyContent="SpaceBetween" width="100%" class="sapUiSmallMarginBottom">
+								<Input id="Name" placeholder="Project Name" width="176%"/>
+								<Select id="Category" forceSelection="false" selectedKey="ERP" width="auto" class="myCustomHeight">
+									<core:Item text="AI" key="AI"/>
+									<core:Item text="AWS" key="AWS"/>
+									<core:Item text="BC" key="BC"/>
+									<core:Item text="BI" key="BI"/>
+									<core:Item text="CRM" key="CRM"/>
+									<core:Item text="DB" key="DB"/>
+									<core:Item text="DT" key="DT"/>
+									<core:Item text="ERP" key="ERP"/>
+									<core:Item text="HR" key="HR"/>
+									<core:Item text="PI" key="PI"/>
+									<core:Item text="Other" key="Other"/>
+								</Select>
+							</FlexBox>
+							<Input id="Description" placeholder="Description" width="100%" class="sapUiSmallMarginBottom"/>
+							<Title text="Client Information" level="H2" class="sapUiTinyMarginBottom"/>
+							<FlexBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" width="auto" class="sapUiSmallMarginBottom">
+								<Select id="Client" width="442%" maxWidth="450%" items="{ path: '/Client', sorter: { path: 'CompanyName', descending: true }}">
+									<items>
+										<core:Item text="{CompanyName}" key="{ClientID}"/>
+									</items>
+								</Select>
+								<Button id="addClient" icon="sap-icon://add" tooltip="Add new Client" type="Transparent"/>
+							</FlexBox>
+							<Title text="Timeline" level="H2" class="sapUiTinyMarginBottom"/>
+							<FlexBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" width="100%">
+								<DatePicker id="DateStarted" placeholder="Start Date" displayFormat="dd/MM/yyyy" width="auto" class="sapUiTinyMarginEnd"/>
+								<DatePicker id="DateEnd" placeholder="End Date" displayFormat="dd/MM/yyyy" width="auto"/>
+							</FlexBox>
+						</l:VerticalLayout>
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+		<buttons>
+			<Button text="Cancel" press="closeDialog"/>
+			<Button text="Proceed" press="onSave" type="Emphasized"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

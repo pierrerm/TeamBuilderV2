@@ -1,0 +1,581 @@
+[{
+	"EmployeeID": "1000000001",
+	"Address": "123 Wall st, Montreal, QC, Canada",
+	"Position": "Lead Consultant",
+	"FirstName": "John",
+	"LastName": "Smith",
+	"Sex": "M",
+	"PhoneNumber": "5148079685",
+	"EmailAddress": "John.Smith@company.com",
+	"Language": "EN",
+	"DateOfBirth": "/Date(967835722000)/",
+	"DateOfArrival": "/Date(1114283722000)/",
+	"CreatedAt": "/Date(1264191322000)/",
+	"ChangedAt": "/Date(1509218122000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%201')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%201')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%201')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee1.jpg"
+}, {
+	"EmployeeID": "1000000002",
+	"Address": "4339 Clark st, Montreal, QC, Canada",
+	"Position": "Business Analyst",
+	"FirstName": "Maria",
+	"LastName": "Sanchez",
+	"Sex": "F",
+	"PhoneNumber": "5149305758",
+	"EmailAddress": "Maria.Sanchez@company.com",
+	"Language": "ES",
+	"DateOfBirth": "/Date(1149189322000)/",
+	"DateOfArrival": "/Date(1224702922000)/",
+	"CreatedAt": "/Date(1190142922000)/",
+	"ChangedAt": "/Date(1157742922000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%202')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%202')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%202')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/Femployee1.jpg"
+}, {
+	"EmployeeID": "1000000003",
+	"Address": "3002 St Laurent blvd, Montreal, QC, Canada",
+	"Position": "AWS developer",
+	"FirstName": "Sam",
+	"LastName": "Sullyvan",
+	"Sex": "M",
+	"PhoneNumber": "5141093892",
+	"EmailAddress": "Sam.Sullyvan@company.com",
+	"Language": "FR",
+	"DateOfBirth": "/Date(1139256922000)/",
+	"DateOfArrival": "/Date(1405365322000)/",
+	"CreatedAt": "/Date(1301426122000)/",
+	"ChangedAt": "/Date(1516133722000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%203')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%203')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%203')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee2.jpg"
+}, {
+	"EmployeeID": "1000000004",
+	"Address": "746 Ste Famille st, Montreal, QC, Canada",
+	"Position": "BI expert",
+	"FirstName": "Laura",
+	"LastName": "McMahon",
+	"Sex": "F",
+	"PhoneNumber": "4382264726",
+	"EmailAddress": "Laura.McMahon@company.com",
+	"Language": "FR",
+	"DateOfBirth": "/Date(1274210122000)/",
+	"DateOfArrival": "/Date(990299722000)/",
+	"CreatedAt": "/Date(1532373322000)/",
+	"ChangedAt": "/Date(1210187722000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%204')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%204')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%204')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/Femployee2.jpg"
+}, {
+	"EmployeeID": "1000000005",
+	"Address": "1509 Drolet st, Montreal, QC, Canada",
+	"Position": "ABAP developer",
+	"FirstName": "Dan",
+	"LastName": "Rivers",
+	"Sex": "M",
+	"PhoneNumber": "5140056392",
+	"EmailAddress": "Dan.Rivers@company.com",
+	"Language": "FR",
+	"DateOfBirth": "/Date(1539976522000)/",
+	"DateOfArrival": "/Date(1555528522000)/",
+	"CreatedAt": "/Date(1039464922000)/",
+	"ChangedAt": "/Date(1239390922000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%205')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%205')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%205')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee3.jpg"
+}, {
+	"EmployeeID": "1000000006",
+	"Address": "4526 De Bullion st, Montreal, QC, Canada",
+	"Position": "SAPUI5 developer",
+	"FirstName": "Michael",
+	"LastName": "Potters",
+	"Sex": "M",
+	"PhoneNumber": "4380518503",
+	"EmailAddress": "Michael.Potters@company.com",
+	"Language": "EN",
+	"DateOfBirth": "/Date(1268424922000)/",
+	"DateOfArrival": "/Date(1490642122000)/",
+	"CreatedAt": "/Date(1133381722000)/",
+	"ChangedAt": "/Date(1184354122000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%206')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%206')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%206')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee4.jpg"
+}, {
+	"EmployeeID": "1000000007",
+	"Address": "5028 De Bleury st, Montreal, QC, Canada",
+	"Position": "Server Architecture Expert",
+	"FirstName": "Katherine",
+	"LastName": "Del Sierra",
+	"Sex": "F",
+	"PhoneNumber": "4380265937",
+	"EmailAddress": "Katherine.DelSierra@company.com",
+	"Language": "FR",
+	"DateOfBirth": "/Date(978380122000)/",
+	"DateOfArrival": "/Date(1011730522000)/",
+	"CreatedAt": "/Date(1538421322000)/",
+	"ChangedAt": "/Date(1070568922000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%207')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%207')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%207')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/Femployee3.png"
+}, {
+	"EmployeeID": "1000000008",
+	"Address": "4930 Roy st, Montreal, QC, Canada",
+	"Position": "ABAP developer",
+	"FirstName": "Steve",
+	"LastName": "Green",
+	"Sex": "M",
+	"PhoneNumber": "5140927859",
+	"EmailAddress": "Steve.Green@company.com",
+	"Language": "FR",
+	"DateOfBirth": "/Date(1136146522000)/",
+	"DateOfArrival": "/Date(1090782922000)/",
+	"CreatedAt": "/Date(1434395722000)/",
+	"ChangedAt": "/Date(1414610122000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%208')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%208')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%208')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee5.jpg"
+}, {
+	"EmployeeID": "1000000009",
+	"Address": "3999 St Urbain st, Montreal, QC, Canada",
+	"Position": "BI developer",
+	"FirstName": "Joe",
+	"LastName": "Cortez",
+	"Sex": "M",
+	"PhoneNumber": "5141294620",
+	"EmailAddress": "Joe.Cortez@company.com",
+	"Language": "ES",
+	"DateOfBirth": "/Date(609048000000)/",
+	"DateOfArrival": "/Date(1182194122000)/",
+	"CreatedAt": "/Date(1290456922000)/",
+	"ChangedAt": "/Date(1121973322000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%209')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%209')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%209')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee6.jpg"
+}, {
+	"EmployeeID": "1000000010",
+	"Address": "1505 Ste Catherine st, Montreal, QC, Canada",
+	"Position": "HR Director",
+	"FirstName": "Rachel",
+	"LastName": "Woods",
+	"Sex": "F",
+	"PhoneNumber": "4382794039",
+	"EmailAddress": "Rachel.Woods@company.com",
+	"Language": "EN",
+	"DateOfBirth": "/Date(1211483722000)/",
+	"DateOfArrival": "/Date(1147547722000)/",
+	"CreatedAt": "/Date(1070223322000)/",
+	"ChangedAt": "/Date(1464981322000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2010')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2010')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2010')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/Femployee4.jpg"
+}, {
+	"EmployeeID": "1000000011",
+	"Address": "1895 Port st, Montreal, QC, Canada",
+	"Position": "Marketing Director",
+	"FirstName": "Cynthia",
+	"LastName": "Callighan",
+	"Sex": "F",
+	"PhoneNumber": "5148852234",
+	"EmailAddress": "Cynthia.Callighan@company.com",
+	"Language": "EN",
+	"DateOfBirth": "/Date(967835722000)/",
+	"DateOfArrival": "/Date(1114283722000)/",
+	"CreatedAt": "/Date(1264191322000)/",
+	"ChangedAt": "/Date(1509218122000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2011')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2011')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2011')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/Femployee5.jpg"
+}, {
+	"EmployeeID": "1000000012",
+	"Address": "4319 Ste Famille st, Montreal, QC, Canada",
+	"Position": "CRM Expert",
+	"FirstName": "Karim",
+	"LastName": "Lebel",
+	"Sex": "M",
+	"PhoneNumber": "5143980048",
+	"EmailAddress": "Karim.Lebel@company.com",
+	"Language": "AR",
+	"DateOfBirth": "/Date(1149189322000)/",
+	"DateOfArrival": "/Date(1224702922000)/",
+	"CreatedAt": "/Date(1190142922000)/",
+	"ChangedAt": "/Date(1157742922000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2012')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2012')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2012')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee7.png"
+}, {
+	"EmployeeID": "1000000013",
+	"Address": "6452 St Denis blvd, Montreal, QC, Canada",
+	"Position": "AWS Cloud Expert",
+	"FirstName": "Pierre",
+	"LastName": "Tremblay",
+	"Sex": "M",
+	"PhoneNumber": "4386680322",
+	"EmailAddress": "Pierre.Tremblay@company.com",
+	"Language": "FR",
+	"DateOfBirth": "/Date(1139256922000)/",
+	"DateOfArrival": "/Date(1405365322000)/",
+	"CreatedAt": "/Date(1301426122000)/",
+	"ChangedAt": "/Date(1516133722000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2013')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2013')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2013')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee8.jpg"
+}, {
+	"EmployeeID": "1000000014",
+	"Address": "2298 St Mathieu st, Montreal, QC, Canada",
+	"Position": "PI expert",
+	"FirstName": "Clara",
+	"LastName": "Decimes",
+	"Sex": "F",
+	"PhoneNumber": "5147253345",
+	"EmailAddress": "Clara.Decimes@company.com",
+	"Language": "FR",
+	"DateOfBirth": "/Date(1274210122000)/",
+	"DateOfArrival": "/Date(990299722000)/",
+	"CreatedAt": "/Date(1532373322000)/",
+	"ChangedAt": "/Date(1210187722000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2014')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2014')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2014')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/Femployee6.jpg"
+}, {
+	"EmployeeID": "1000000015",
+	"Address": "543 Prince Arthur st, Montreal, QC, Canada",
+	"Position": "ABAP developer",
+	"FirstName": "Andrew",
+	"LastName": "Johnson",
+	"Sex": "M",
+	"PhoneNumber": "5148394927",
+	"EmailAddress": "Andrew.Johnson@company.com",
+	"Language": "EN",
+	"DateOfBirth": "/Date(1539976522000)/",
+	"DateOfArrival": "/Date(1555528522000)/",
+	"CreatedAt": "/Date(1039464922000)/",
+	"ChangedAt": "/Date(1239390922000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2015')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2015')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2015')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee9.jpg"
+}, {
+	"EmployeeID": "1000000016",
+	"Address": "9837 Des Bois st, Montreal, QC, Canada",
+	"Position": "SAP Fiori UX Designer",
+	"FirstName": "Anne",
+	"LastName": "Michelet",
+	"Sex": "F",
+	"PhoneNumber": "4387729489",
+	"EmailAddress": "Anne.Michelet@company.com",
+	"Language": "FR",
+	"DateOfBirth": "/Date(1268424922000)/",
+	"DateOfArrival": "/Date(1490642122000)/",
+	"CreatedAt": "/Date(1133381722000)/",
+	"ChangedAt": "/Date(1184354122000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2016')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2016')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2016')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/Femployee7.jpg"
+}, {
+	"EmployeeID": "1000000017",
+	"Address": "1573 Roy st, Montreal, QC, Canada",
+	"Position": "S/4Hana Expert",
+	"FirstName": "Domenico",
+	"LastName": "Costa",
+	"Sex": "M",
+	"PhoneNumber": "5148973261",
+	"EmailAddress": "Domenico.Costa@company.com",
+	"Language": "IT",
+	"DateOfBirth": "/Date(978380122000)/",
+	"DateOfArrival": "/Date(1011730522000)/",
+	"CreatedAt": "/Date(1538421322000)/",
+	"ChangedAt": "/Date(1070568922000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2017')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2017')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2017')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee10.jpg"
+}, {
+	"EmployeeID": "1000000018",
+	"Address": "1222 De La Montagne st, Montreal, QC, Canada",
+	"Position": "ABAP developer",
+	"FirstName": "Valerie",
+	"LastName": "Mayors",
+	"Sex": "F",
+	"PhoneNumber": "4387027498",
+	"EmailAddress": "Valerie.Mayors@company.com",
+	"Language": "FR",
+	"DateOfBirth": "/Date(1136146522000)/",
+	"DateOfArrival": "/Date(1090782922000)/",
+	"CreatedAt": "/Date(1434395722000)/",
+	"ChangedAt": "/Date(1414610122000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2018')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2018')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2018')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/Femployee8.jpg"
+}, {
+	"EmployeeID": "1000000019",
+	"Address": "5437 St Urbain st, Montreal, QC, Canada",
+	"Position": "Hana Expert",
+	"FirstName": "Romain",
+	"LastName": "Granjard",
+	"Sex": "M",
+	"PhoneNumber": "5148088332",
+	"EmailAddress": "Romain.Granjard@company.com",
+	"Language": "FR",
+	"DateOfBirth": "/Date(609048000000)/",
+	"DateOfArrival": "/Date(1182194122000)/",
+	"CreatedAt": "/Date(1290456922000)/",
+	"ChangedAt": "/Date(1121973322000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2019')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2019')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2019')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/employee11.jpg"
+}, {
+	"EmployeeID": "1000000020",
+	"Address": "3245 Ste Catherine st, Montreal, QC, Canada",
+	"Position": "Contract Jurisdiction Expert",
+	"FirstName": "Sarah",
+	"LastName": "Connors",
+	"Sex": "F",
+	"PhoneNumber": "4389788637",
+	"EmailAddress": "Sarah.Connors@company.com",
+	"Language": "EN",
+	"DateOfBirth": "/Date(1211483722000)/",
+	"DateOfArrival": "/Date(1147547722000)/",
+	"CreatedAt": "/Date(1070223322000)/",
+	"ChangedAt": "/Date(1464981322000)/",
+	"__metadata": {
+		"uri": "EmployeeSet('EmployeeID%2020')",
+		"type": "talent.Employee"
+	},
+	"ToProjectAssignments": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2020')/ToProjectAssignments"
+		}
+	},
+	"ToCompetences": {
+		"__deferred": {
+			"uri": "EmployeeSet('EmployeeID%2020')/ToCompetences"
+		}
+	},
+	"Headshot": "images/headshots/Femployee9.jpg"
+}]

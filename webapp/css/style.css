@@ -1,0 +1,21 @@
+/* Custom Styles */
+
+.myCustomHeight {
+    height: 2.25rem !important;
+}
+
+.myCustomMarginTop {
+    margin-top: 0.125rem !important;
+}
+
+.myBold {
+    font-weight: bold !important;
+}
+
+.myTitle {
+    font-size: 1.25rem !important;
+}
+
+.mySubTitle {
+    font-size: 1.125rem !important;
+}

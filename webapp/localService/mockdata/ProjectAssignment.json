@@ -1,0 +1,361 @@
+[{
+	"ProjectAssignmentID": "3000000001",
+	"ProjectID": "2000000001",
+	"EmployeeID": "1000000001",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%201')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%201')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%201')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000002",
+	"ProjectID": "2000000001",
+	"EmployeeID": "1000000002",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%202')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%202')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%202')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000003",
+	"ProjectID": "2000000001",
+	"EmployeeID": "1000000003",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%203')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%203')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%203')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000004",
+	"ProjectID": "2000000001",
+	"EmployeeID": "1000000004",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%204')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%204')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%204')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000005",
+	"ProjectID": "2000000002",
+	"EmployeeID": "1000000005",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%205')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%205')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%205')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000006",
+	"ProjectID": "2000000002",
+	"EmployeeID": "1000000006",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%206')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%206')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%206')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000007",
+	"ProjectID": "2000000002",
+	"EmployeeID": "1000000007",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%207')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%207')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%207')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000008",
+	"ProjectID": "2000000002",
+	"EmployeeID": "1000000008",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%208')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%208')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%208')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000009",
+	"ProjectID": "2000000003",
+	"EmployeeID": "1000000009",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%209')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%209')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%209')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000010",
+	"ProjectID": "2000000003",
+	"EmployeeID": "1000000010",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%2010')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%2010')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%2010')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000011",
+	"ProjectID": "2000000003",
+	"EmployeeID": "1000000011",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%201')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%201')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%201')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000012",
+	"ProjectID": "2000000003",
+	"EmployeeID": "1000000012",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%202')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%202')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%202')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000013",
+	"ProjectID": "2000000004",
+	"EmployeeID": "1000000013",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%203')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%203')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%203')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000014",
+	"ProjectID": "2000000004",
+	"EmployeeID": "1000000014",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%204')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%204')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%204')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000015",
+	"ProjectID": "2000000004",
+	"EmployeeID": "1000000015",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%205')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%205')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%205')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000016",
+	"ProjectID": "2000000004",
+	"EmployeeID": "1000000016",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%206')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%206')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%206')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000017",
+	"ProjectID": "2000000005",
+	"EmployeeID": "1000000017",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%207')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%207')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%207')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000018",
+	"ProjectID": "2000000005",
+	"EmployeeID": "1000000018",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%208')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%208')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%208')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000019",
+	"ProjectID": "2000000005",
+	"EmployeeID": "1000000019",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%209')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%209')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%209')/ToEmployee"
+		}
+	}
+}, {
+	"ProjectAssignmentID": "3000000020",
+	"ProjectID": "2000000005",
+	"EmployeeID": "1000000020",
+	"__metadata": {
+		"uri": "ProjectAssignment('ProjectAssignmentID%2010')",
+		"type": "talent.ProjectAssignment"
+	},
+	"ToProject": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%2010')/ToProject"
+		}
+	},
+	"ToEmployee": {
+		"__deferred": {
+			"uri": "ProjectAssignment('ProjectAssignmentID%2010')/ToEmployee"
+		}
+	}
+}]

@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog id="viewSettingsDialog" confirm=".onConfirmViewSettingsDialog">
+		<sortItems>
+			<ViewSettingsItem text="Language" key="ToClient/Language" selected="true"/>
+			<ViewSettingsItem text="Name" key="Name" selected="true"/>
+			<ViewSettingsItem text="Client" key="ToClient/CompanyName" selected="true"/>
+			<ViewSettingsItem text="Date Started" key="DateStarted" selected="true"/>
+			<ViewSettingsItem text="Date Ended" key="DateEnd" selected="true"/>
+			<ViewSettingsItem text="Category" key="Category" selected="true"/>
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

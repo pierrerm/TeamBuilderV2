@@ -1,0 +1,106 @@
+[{
+	"ClientID": "4000000001",
+	"Address": "2405 De La Gauchetiere st, Montreal, QC, Canada",
+	"CompanyName": "Teknikal Services SA",
+	"WebAddress": "https://www.teknikal-services.ca/",
+	"EmailAddress": "steve.denousy@teknikal-services.ca",
+	"PhoneNumber": "5148097765",
+	"Industry": "IT Services",
+	"CreatedAt": "/Date(1554696000000)/",
+	"ChangedAt": "/Date(1559188800000)/",
+	"__metadata": {
+		"uri": "Client('ContractorID%201')",
+		"type": "talent.Client"
+	},
+	"ToProjects": {
+		"__deferred": {
+			"uri": "Client('ContractorID%201')/ToProjects"
+		}
+	},
+	"Logo": "images/Teknikal.png",
+	"Language": "EN"
+}, {
+	"ClientID": "4000000002",
+	"Address": "3005 University st, Montreal, QC, Canada",
+	"CompanyName": "Université de Montréal",
+	"WebAddress": "https://www.umontreal.ca/",
+	"EmailAddress": "marie.archambault@umontreal.ca",
+	"PhoneNumber": "4380798322",
+	"Industry": "Education",
+	"CreatedAt": "/Date(1554747335000)/",
+	"ChangedAt": "/Date(1559188800000)/",
+	"__metadata": {
+		"uri": "Client('ContractorID%202')",
+		"type": "talent.Client"
+	},
+	"ToProjects": {
+		"__deferred": {
+			"uri": "Client('ContractorID%202')/ToProjects"
+		}
+	},
+	"Logo": "images/UdeM.png",
+	"Language": "FR"
+}, {
+	"ClientID": "4000000003",
+	"Address": "5670 St Laurent st, Montreal, QC, Canada",
+	"CompanyName": "Provigo",
+	"WebAddress": "https://www.provigo.ca/",
+	"EmailAddress": "thibault.bernard@provigo.ca",
+	"PhoneNumber": "4387261154",
+	"Industry": "Retail",
+	"CreatedAt": "/Date(1554696000000)/",
+	"ChangedAt": "/Date(1559188800000)/",
+	"__metadata": {
+		"uri": "Client('ContractorID%203')",
+		"type": "talent.Client"
+	},
+	"ToProjects": {
+		"__deferred": {
+			"uri": "Client('ContractorID%203')/ToProjects"
+		}
+	},
+	"Logo": "images/provigo.png",
+	"Language": "FR"
+}, {
+	"ClientID": "4000000004",
+	"Address": "1005 Ste Cuthbert st, Montreal, QC, Canada",
+	"CompanyName": "Groupe St-Hubert",
+	"WebAddress": "http://www.st-hubert.com/index.en.html",
+	"EmailAddress": "michelle.blanc@st-hubert.com",
+	"PhoneNumber": "5144539213",
+	"Industry": "Restauration",
+	"CreatedAt": "/Date(1554696000000)/",
+	"ChangedAt": "/Date(1559188800000)/",
+	"__metadata": {
+		"uri": "Client('ContractorID%204')",
+		"type": "talent.Client"
+	},
+	"ToProjects": {
+		"__deferred": {
+			"uri": "Client('ContractorID%204')/ToProjects"
+		}
+	},
+	"Logo": "images/St-Hubert.png",
+	"Language": "FR"
+}, {
+	"ClientID": "4000000005",
+	"Address": "8938 Stadium st, Montreal, QC, Canada",
+	"CompanyName": "ProVert Jardineries",
+	"WebAddress": "http://www.jardineries-provert.ca/",
+	"EmailAddress": "peter.dubois@jardineries-provert.ca",
+	"PhoneNumber": "5149092019",
+	"Industry": "Gardening",
+	"CreatedAt": "/Date(1554696000000)/",
+	"ChangedAt": "/Date(1559188800000)/",
+	"__metadata": {
+		"uri": "Client('ContractorID%205')",
+		"type": "talent.Client"
+	},
+	"ToProjects": {
+		"__deferred": {
+			"uri": "Client('ContractorID%205')/ToProjects"
+		}
+	},
+	"Logo": "images/provert.png",
+	"Language": "EN"
+}]
