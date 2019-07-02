@@ -1,0 +1,49 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns="sap.m"
+	xmlns:uxap="sap.uxap" xmlns:tnt="sap.tnt">
+	<Dialog id="viewClientDialog" title="View Client" xmlns:f="sap.f">
+		<l:Grid defaultSpan="L12 M12 S12" width="auto">
+			<l:content>
+				<form:SimpleForm maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4"
+					emptySpanM="4" columnsL="2" columnsM="2">
+					<form:content>
+						<l:VerticalLayout>
+							<FlexBox justifyContent="Start" alignContent="Center" alignItems="Center" class="sapUiSmallMarginBottom">
+								<f:Avatar src="{clientView>/Logo}" displaySize="XL" fallbackIcon="sap-icon://building"/>
+								<Title text="{clientView>/CompanyName}" level="H1" class="myBold myTitle sapUiSmallMarginBegin"/>
+							</FlexBox>
+							<Title text="General Information" level="H1" class="sapUiTinyMarginBottom myBold"/>
+							<l:HorizontalLayout>
+								<l:VerticalLayout>
+										<Label text="Industry:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+										<Label text="Language:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+								</l:VerticalLayout>
+								<l:VerticalLayout>
+									<Text text="{clientView>/Industry}" class="sapUiTinyMarginBottom"/>
+									<Text text="{clientView>/Language}" class="sapUiTinyMarginBottom"/>
+								</l:VerticalLayout>
+							</l:HorizontalLayout>
+							<Title text="Contact Information" level="H1" class="sapUiSmallMarginTop sapUiTinyMarginBottom myBold"/>
+							<l:HorizontalLayout>
+								<l:VerticalLayout>
+										<Label text="Address:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+										<Label text="Email:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+										<Label text="Website:" class="sapUiTinyMarginEnd sapUiTinyMarginBottom"/>
+										<Label text="Phone:" class="sapUiTinyMarginEnd"/>
+								</l:VerticalLayout>
+								<l:VerticalLayout>
+									<Text text="{clientView>/Address}" class="sapUiTinyMarginBottom"/>
+									<Link text="{clientView>/EmailAddress}" press="onSendClientEmail" class="sapUiTinyMarginBottom"/>
+									<Link text="{clientView>/WebAddress}" href="{clientView>/WebAddress}" class="sapUiTinyMarginBottom" target="_blank"/>
+									<Text id="phoneNum" text="{clientView>/PhoneNumber}"/>
+								</l:VerticalLayout>
+							</l:HorizontalLayout>
+						</l:VerticalLayout>
+					</form:content>
+				</form:SimpleForm>
+			</l:content>
+		</l:Grid>
+		<buttons>
+			<Button text="Close" press="onCloseViewClient"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

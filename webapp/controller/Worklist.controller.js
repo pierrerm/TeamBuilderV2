@@ -316,7 +316,7 @@ sap.ui.define([
 		onSave: function () {
 			var that = this;
 			var oResourceBundle = that.getResourceBundle(),
-				sProjectID = (2000000000 + parseInt(100000000 * Math.random())).toString(),
+				sProjectID = (2000000000 + parseInt(100000000 * Math.random(), 10)).toString(),
 				sContractorID = that.getView().byId("Client").getSelectedKey(),
 				sName = that.getView().byId("Name").getValue(),
 				sDescription = that.getView().byId("Description").getValue(),
@@ -324,8 +324,13 @@ sap.ui.define([
 				dStart = new Date(that.getView().byId("DateStarted").getValue()),
 				dEnd = new Date(that.getView().byId("DateEnd").getValue()),
 				dToday = new Date(),
-				sProject = sName + " project for " + that.getModel().getProperty("/Client('" + sContractorID + "')/CompanyName");
-			that.getModel().create("/Project(ProjectID='" + sProjectID + "')", {
+				sProject = sName + " project for " + that.getModel().getProperty("/Client('" + sContractorID + "')/CompanyName"),
+				aItems = that.getView().byId("Competences").getSelectedItems();
+				var aCompetences = [];
+				for(var i = 0; i < aItems.length; i++){
+					aCompetences.push(aItems[i].getKey());
+				}
+			that.getModel().create("/Project", {
 				ProjectID: sProjectID,
 				ContractorID: sContractorID,
 				Category: sCategory,
@@ -358,13 +363,79 @@ sap.ui.define([
 				method: "POST",
 				success: function (data) {
 					MessageToast.show(oResourceBundle.getText("createSuccessMessage", [sProject]));
+					var sCompetenceID = 0;
+					for(var sCompetence in aCompetences){
+						if(sCompetence === undefined) {
+							break;
+						} else {
+							sCompetenceID = (5000000000 + parseInt(1000000000 * Math.random(), 10)).toString();
+							that.getModel().create("/Competence", {
+								CompetenceID: sCompetenceID,
+								EmployeeID: "",
+								ProjectID: sProjectID,
+								SkillName: sCompetence,
+								Percentage: "Percentage",
+								__metadata: {
+									"uri": "Competence('" + sCompetenceID + "')",
+									"type": "talent.Competence"
+								},
+								ToProject: {
+									"__deferred": {
+										"uri": "Competence('" + sCompetenceID + "')/ToProject"
+									}
+								},
+								ToEmployee: {
+									"__deferred": {
+										"uri": "Competence('" + sCompetenceID + "')/ToEmployee"
+									}
+								},
+								Value: parseInt(10 * Math.random(), 10).toString()
+							}, {
+								method: "POST",
+								success: function (data2) {
+									// var sProjectAssignmentID = (3000000000 + parseInt(1000000000 * Math.random(), 10)).toString();
+									// MessageToast.show(oResourceBundle.getText("createSuccessMessage", [sProject]));
+									// that.getModel().create("/ProjectAssignment", {
+									// 	ProjectAssignmentID: sProjectAssignmentID,
+									// 	EmployeeID: 1000000001,
+									// 	ProjectID: sProjectID,
+									// 	__metadata: {
+									// 		"uri": "ProjectAssignment(ProjectAssignmentID='" + sProjectAssignmentID + "')",
+									// 		"type": "talent.ProjectAssignment"
+									// 	},
+									// 	ToProject: {
+									// 		"__deferred": {
+									// 			"uri": "ProjectAssignment(ProjectAssignmentID='" + sProjectAssignmentID + "')/ToProject"
+									// 		}
+									// 	},
+									// 	ToEmployee: {
+									// 		"__deferred": {
+									// 			"uri": "ProjectAssignment(ProjectAssignmentID='" + sProjectAssignmentID + "')/ToEmployee"
+									// 		}
+									// 	}
+									// }, {
+									// 	method: "POST",
+									// 	success: function (data3) {
+									// 		MessageToast.show(oResourceBundle.getText("createSuccessMessage", [sProject]));
+									// 	},
+									// 	error: function (response2) {
+									// 		MessageToast.show(oResourceBundle.getText("createErrorMessage", [sProject]));
+									// 	}
+									// });
+								},
+								error: function (response2) {
+									MessageToast.show(oResourceBundle.getText("createErrorMessage", [sProject]));
+								}
+							});
+						}
+					}
 				},
 				error: function (response) {
 					MessageToast.show(oResourceBundle.getText("createErrorMessage", [sProject]));
 				}
 			});
 			that._oTable.getBinding("items").refresh();
-			that.byId("addProjectDialog").close();
+			that.byId("addProjectDialog").destroy();
 		}
 
 	});

@@ -12,7 +12,7 @@
 						<semantic:titleHeading>
 							<FlexBox justifyContent="SpaceBetween">
 								<l:HorizontalLayout id="_IDEGen_horizontallayout0">
-									<f:Avatar src="{ToClient/Logo}" displaySize="XL" fallbackIcon="sap-icon://building"/>
+									<f:Avatar src="{ToClient/Logo}" displaySize="XL" fallbackIcon="sap-icon://building" press="onViewClient"/>
 									<l:VerticalLayout id="_IDEGen_verticallayout0" class="sapUiMediumMarginTop sapUiSmallMarginBegin">
 										<Title id="_IDEGen_title0" text="{ToClient/CompanyName}" level="H1"/>
 										<Text id="_IDEGen_text0" text="{Name}"/>

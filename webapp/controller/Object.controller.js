@@ -179,20 +179,24 @@ sap.ui.define([
 					success: function (oData, oResponse) {
 						oEmployees = oData;
 						//MessageToast.show(oEmployees.getJSON());
+						//oEmployees = oData;
+						//MessageToast.show(oData.getJSON());
 						var oFilterProperties = {
 							filters: [],
 							and: true
 						};
 						
 						var i = 0;
-						if (oEmployees !== undefined && oEmployees.results !== undefined) {
+						// var aEmployees = oEmployees.results;
+						if (oEmployees.results[i]) {
 							while (oEmployees.results[i] !== undefined) {
 								oFilterProperties.filters.push(new Filter("EmployeeID", FilterOperator.NE, oEmployees.results[i].EmployeeID));
 								i++;
 							}
+							this._aTableSearchState2 = [new Filter(oFilterProperties)];
+						} else {
+							this._aTableSearchState2 = [];
 						}
-						
-						this._aTableSearchState2 = [new Filter(oFilterProperties)];
 
 						if (sQuery && sQuery.length > 0) {
 							this._aTableSearchState2.push(new Filter([
@@ -202,7 +206,7 @@ sap.ui.define([
 								new Filter("Language", FilterOperator.Contains, sQuery)
 							], false));
 						}
-						this._applySearch(this._aTableSearchState2, 2);
+						this._applySearchPID(this._aTableSearchState2);
 						//this._applySearchPID(new Filter(oFilterProperties));
 					}.bind(this),
 					error: function (oError) {
@@ -299,10 +303,55 @@ sap.ui.define([
 			//
 		},
 		
+		onViewClient: function (oEvent) {
+			var oHashChanger = new sap.ui.core.routing.HashChanger();
+			var sHash = oHashChanger.getHash();
+			var aParameters = sHash.split("/");
+			var oClient = new JSONModel();
+			var oView = this.getView();
+			this.getModel().read("/Project('" + aParameters[1] + "')/ToClient", {
+				success: function (oData, oResponse) {
+					oClient = oData;
+					var oViewModel = new JSONModel({
+						Logo: oClient.Logo,
+						CompanyName: oClient.CompanyName,
+						Industry: oClient.Industry,
+						Language: oClient.Language,
+						WebAddress: oClient.WebAddress,
+						Address: oClient.Address,
+						PhoneNumber: oClient.PhoneNumber,
+						EmailAddress: oClient.EmailAddress
+					});
+					this.setModel(oViewModel, "clientView");
+					if (!this._viewClient) {
+						this._viewClient = Fragment.load({
+							id: oView.getId(),
+							name: "team.builder.TeamBuilder.view.ViewClient",
+							controller: this
+						}).then(function (oDialog) {
+							// connect dialog to the root view of this component (models, lifecycle)
+							oView.addDependent(oDialog);
+							oDialog.open();
+						});
+					}
+				}.bind(this),
+				error: function (oError) {
+					MessageToast.show("fail");
+				}
+			});
+		},
+		
 		onCloseViewEmployee: function(){
 			if (this._viewEmployee) {
         		this.byId("viewEmployeeDialog").destroy();
         		this._viewEmployee = null;
+    		}	
+		},
+		
+		onCloseViewClient: function(){
+			if (this._viewClient) {
+        		this.byId("viewClientDialog").destroy();
+        		this._viewClient = null;
     		}	
 		},
 		
@@ -505,28 +554,34 @@ sap.ui.define([
 			var sHash = oHashChanger.getHash();
 			var aParameters = sHash.split("/");
 			var oEmployees = new JSONModel();
-			var aEmployeeIDs = [];
+			//var aEmployeeIDs = [];
 			
 			this._getProjectCompetences.bind(this);
 
 			this.getModel().read("/Project('" + aParameters[1] + "')/ToProjectAssignments?$format=json", {
 				success: function (oData, oResponse) {
 					oEmployees = oData;
-					var i = 0;
-					while (oEmployees.results[i] !== undefined) {
-						aEmployeeIDs[i] = oEmployees.results[i].EmployeeID;
-						i++;
-					}
+					//MessageToast.show(oEmployees.getJSON());
+					//oEmployees = oData;
+					//MessageToast.show(oData.getJSON());
 					var oFilterProperties = {
 						filters: [],
 						and: true
 					};
-					// this._aTableSearchState2.push(new Filter("EmployeeID", FilterOperator.NE, aEmployeeIDs[0]));
-					for (var j = 0; j < aEmployeeIDs.length; j++) {
-						oFilterProperties.filters.push(new Filter("EmployeeID", FilterOperator.NE, aEmployeeIDs[j]));
+					
+					var i = 0;
+					// var aEmployees = oEmployees.results;
+					if (oEmployees.results[i]) {
+						while (oEmployees.results[i] !== undefined) {
+							oFilterProperties.filters.push(new Filter("EmployeeID", FilterOperator.NE, oEmployees.results[i].EmployeeID));
+							i++;
+						}
+						this._aTableSearchState2 = [new Filter(oFilterProperties)];
+					} else {
+						this._aTableSearchState2 = [];
 					}
-					this._aTableSearchState2.push(new Filter(oFilterProperties));
-					this._applySearchPID(this._aTableSearchState2);
+
+					this._applySearch(this._aTableSearchState2, 2);
 				}.bind(this),
 				error: function (oError) {
 					MessageToast.show("fail");

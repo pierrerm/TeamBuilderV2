@@ -132,5 +132,9 @@
 				}
 			}
 		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/z_team_builder/webapp",
+		"_version": "1.1.0"
 	}
 }
